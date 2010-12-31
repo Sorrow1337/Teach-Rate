@@ -1,3 +1,4 @@
 <?php
 require_once 'config/configuration.php';
-echo page_name('acceuil');
+$page = 'x';
+include_once 'build/header.php';
