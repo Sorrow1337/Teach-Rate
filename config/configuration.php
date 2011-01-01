@@ -1,7 +1,7 @@
 <?php
 define( 'ROOT', './' ); // Pour plus tard
 define( 'PHP', strrchr( __FILE__, '.' ) );
-define( 'VERSION', '0.0.1' );
+define( 'VERSION', '0.0.2' );
 ini_set('date.timezone', 'Europe/Paris');
 
 require_once( 'mysql' . PHP );
