@@ -1,5 +1,6 @@
 <?php
 define( 'ROOT', './' ); // Pour plus tard
+define( 'PAGES', 'pages/' );
 define( 'PHP', strrchr( __FILE__, '.' ) );
 define( 'VERSION', '0.0.2' );
 ini_set('date.timezone', 'Europe/Paris');
