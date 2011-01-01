@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title><?php echo $title.' - '.$page; ?></title>
+<title><?php echo $title . ' - ' . page_name($page); ?></title>
 <!-- Metas -->
 <meta http-equiv="Content-Language" content="fr" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

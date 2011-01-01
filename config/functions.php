@@ -3,13 +3,16 @@ function page_name($page)
 {
   switch($page)
   {
-    case 'acceuil';
+    case 'home';
       $page = 'Acceuil';
       break;
-    /*case '';
-      $page = '';
+    case ''; // Si $page est vide
+      $page = 'Acceuil';
       break;
-    case '';
+    case '404';
+      $page = 'Erreur 404';
+      break;
+    /*case '';
       $page = '';
       break;
     case '';

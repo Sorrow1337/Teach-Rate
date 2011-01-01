@@ -18,7 +18,7 @@ if(isset($page) && $page != '')
 }
 else
 {
-  include_once PAGES . 'acceuil' . PHP;
+  include_once PAGES . 'home' . PHP;
 }
 
 include_once 'build/footer.php';
