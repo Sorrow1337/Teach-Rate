@@ -7,5 +7,5 @@ ini_set('date.timezone', 'Europe/Paris');
 require_once( 'mysql' . PHP );
 require_once( 'functions' . PHP );
 
-$title = 'Dhuum CMS v' . VERSION . ' &bull; by Sorrow';
+$title = 'Wazuras &bull; Dhuum CMS v' . VERSION;
 $description = 'Nothing'; 
