@@ -9,4 +9,4 @@ require_once( 'database' . PHP );
 require_once( 'functions' . PHP );
 
 $title = 'Wazuras &bull; Dhuum CMS v' . VERSION;
-$description = 'Nothing'; 
+$description = 'Nothing';
