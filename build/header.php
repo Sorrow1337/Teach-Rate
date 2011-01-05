@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
+<!-- Title -->
 <title><?php echo $title . ' - ' . page_name($page); ?></title>
 <!-- Metas -->
 <meta http-equiv="Content-Language" content="fr" />
@@ -20,6 +21,7 @@
 <meta name="Robots" content="index, follow" />
 <meta name="Revisit-After" content="10 days" />
 <!-- Style -->
+<link href="styles/web.css" rel="stylesheet" type="text/css"/>
 <!-- JavaScript -->
 </head>
 <body>
