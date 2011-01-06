@@ -264,30 +264,6 @@ Other updates I have for you so far are new arcade games I have planned such as 
 			<b>&copy; 2010, GMT Crew.</b> All Rights Reserved. All trademarks are property of their respective owners.  Website design/code by <a href="/forums/member.php?u=2">MacDGuy.</a>
 			<br/>
 			GMod Tower is a modification for <a href="http://www.garrysmod.com/">Garry's Mod</a> built upon the <a href="http://www.steampowered.com/">Valve Source&trade;</a> engine.
-			<br/><!-- Woopra -->
-
-<script type="text/javascript">
-    var _wh = ((document.location.protocol=='https:') ? "https://sec1.woopra.com" : "http://static.woopra.com");
-    document.write(unescape("%3Cscript src='" + _wh + "/js/woopra.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<!-- Google -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-9159641-2']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<!-- Clicky -->
-<script src="http://static.getclicky.com/js" type="text/javascript"></script>
-<script type="text/javascript">clicky.init(247267);</script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/247267ns.gif" /></p></noscript>
+			<br/>
 		Generated <i>cached</i> page in <em>0.113 seconds</em>
-
-			</div>
+</div>
