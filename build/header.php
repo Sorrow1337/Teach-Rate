@@ -20,11 +20,14 @@
   <meta name="Rating" content="General" />
   <meta name="Robots" content="index, follow" />
   <meta name="Revisit-After" content="10 days" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
   <!-- Style -->
   <link href="styles/main.css" rel="stylesheet" type="text/css"/>
   <link href="styles/view.css" rel="stylesheet" type="text/css"/>
   <link href="styles/comments.css" rel="stylesheet" type="text/css"/>
+  <link href="styles/rate.css" rel="stylesheet" type="text/css"/>
   <!-- JavaScript -->
+  <script src="javascripts/rate.js" type="text/javascript"></script>
   <script src="http://code.jquery.com/jquery-1.4.4.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -37,10 +40,10 @@
 
     <div class='tabs'>
       <ul>
-        <li><a href='#'><img src='images/teach.png'> Liste</a></li>
-        <li class='active'><a href='#'><img src='images/details.png'> Details</a></li>
-        <li><a href='#'><img src='images/comment.png'> 1 Commentaire(s)</a></li>
-        <li><a href='#'><img src='images/settings.png'> Admin</a></li>
+        <li><a href='#'><img src='images/teach.png' /> Liste</a></li>
+        <li class='active'><a href='#'><img src='images/details.png' /> Details</a></li>
+        <li><a href='#'><img src='images/comment.png' /> 1 Commentaire(s)</a></li>
+        <li><a href='#'><img src='images/settings.png' /> Admin</a></li>
       </ul>
     </div>
   </div>

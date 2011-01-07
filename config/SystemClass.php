@@ -13,9 +13,8 @@ class SystemClass
 
   public function tableCheck()
   {
-    $this->database();
-    $sql = $this->dbConnection->query("SHOW TABLES LIKE 'ratinItems'");
-    if($sql->rowCount())
+    $row = $this->dbConnection->query("SHOW TABLES LIKE 'ratinItems'");
+    if($row->rowCount())
     {
       // Nothing beacaus table already exist
     }

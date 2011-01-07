@@ -4,4 +4,4 @@ Teach Rate
 Informations
 -------
 
-Site web de vote sur les proffeseur.
+Site web de vote sur les professeur.

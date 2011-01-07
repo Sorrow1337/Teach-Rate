@@ -1,0 +1,184 @@
+/*div Container*/
+.simpleRatings{display:block}
+
+/*Form*/
+.simpleRatings form{
+	padding:0px; margin:0px; overflow:hidden; border:none;
+	position:relative;
+	text-align:left;/*IE7*/
+}
+.simpleRatings fieldset{
+	margin:0px;
+	padding:0px;
+	border:none;
+	position:static;
+}
+/*Form buttons*/
+.simpleRatings input{
+	padding:0px; margin:0px; border:none; background:none;
+	position:absolute; left:0px;
+	height:100%;
+	text-indent:-300px;
+	cursor:pointer;
+	text-transform:uppercase;/*IE7*/
+}
+.simpleRatings input:active, .simpleRatings input:focus{outline:none;}
+
+/*Average Rating*/
+.simpleRatings .average{
+	height:100%;
+	z-index:1;
+}
+
+/*Text*/
+.simpleRatings .text{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:9px;
+	white-space:nowrap;
+	line-height:12px;
+	text-align:center;
+}
+/*Text Style 1*/
+.simpleRatings .L{float:left;} /*Total votes*/
+.simpleRatings .R{float:right} /*Average*/
+/*Text Style 2*/
+.simpleRatings .L2{float:none} /*Total votes*/
+.simpleRatings .R2{float:none} /*Average*/
+
+/*Loading Image*/
+.simpleRatings .load{background:url(../images/rLoading.gif) center no-repeat; height:100%; width:100%;}
+.simpleRatings .loadText{font-weight:normal}
+
+
+/*Most voted list contents*/
+/*Container*/
+.topRatings{
+	font-weight:normal;
+	font-size:14px;
+}
+/*Each row*/
+.topRatings .topRows{
+	line-height:22px;
+}
+.topRatings .topName{}
+.topRatings .topVotes{}
+.topRatings .topAverage{}
+/*Columns*/
+.topName, .topVotes, .topAverage{
+	display:block;
+	float:left;
+	width:33%;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/*Styles (type/size/color)*/
+.simpleRatings .starslargeorange{background:url(../images/stars/large/orange/rElements.png) repeat-x}
+.simpleRatings .starslargeorange input:hover{background:url(../images/stars/large/orange/rElements.png) bottom left repeat-x}
+.simpleRatings .starslargeorange .average{background:url(../images/stars/large/orange/rElements.png) center left repeat-x}
+
+.simpleRatings .starslargered{background:url(../images/stars/large/red/rElements.png) repeat-x}
+.simpleRatings .starslargered input:hover{background:url(../images/stars/large/red/rElements.png) bottom left repeat-x}
+.simpleRatings .starslargered .average{background:url(../images/stars/large/red/rElements.png) center left repeat-x}
+
+.simpleRatings .starslargeblue{background:url(../images/stars/large/blue/rElements.png) repeat-x}
+.simpleRatings .starslargeblue input:hover{background:url(../images/stars/large/blue/rElements.png) bottom left repeat-x}
+.simpleRatings .starslargeblue .average{background:url(../images/stars/large/blue/rElements.png) center left repeat-x}
+
+.simpleRatings .starslargepink{background:url(../images/stars/large/pink/rElements.png) repeat-x}
+.simpleRatings .starslargepink input:hover{background:url(../images/stars/large/pink/rElements.png) bottom left repeat-x}
+.simpleRatings .starslargepink .average{background:url(../images/stars/large/pink/rElements.png) center left repeat-x}
+
+.simpleRatings .starslargegreen{background:url(../images/stars/large/green/rElements.png) repeat-x}
+.simpleRatings .starslargegreen input:hover{background:url(../images/stars/large/green/rElements.png) bottom left repeat-x}
+.simpleRatings .starslargegreen .average{background:url(../images/stars/large/green/rElements.png) center left repeat-x}
+
+.simpleRatings .starslargepurple{background:url(../images/stars/large/purple/rElements.png) repeat-x}
+.simpleRatings .starslargepurple input:hover{background:url(../images/stars/large/purple/rElements.png) bottom left repeat-x}
+.simpleRatings .starslargepurple .average{background:url(../images/stars/large/purple/rElements.png) center left repeat-x}
+
+.simpleRatings .starslargeblack{background:url(../images/stars/large/black/rElements.png) repeat-x}
+.simpleRatings .starslargeblack input:hover{background:url(../images/stars/large/black/rElements.png) bottom left repeat-x}
+.simpleRatings .starslargeblack .average{background:url(../images/stars/large/black/rElements.png) center left repeat-x}
+
+.simpleRatings .starslargewhite{background:url(../images/stars/large/white/rElements.png) repeat-x}
+.simpleRatings .starslargewhite input:hover{background:url(../images/stars/large/white/rElements.png) bottom left repeat-x}
+.simpleRatings .starslargewhite .average{background:url(../images/stars/large/white/rElements.png) center left repeat-x}
+
+/*BREAK*/
+.simpleRatings .starssmallwhite{background:url(../images/stars/small/white/rElements.png) repeat-x}
+.simpleRatings .starssmallwhite input:hover{background:url(../images/stars/small/white/rElements.png) bottom left repeat-x}
+.simpleRatings .starssmallwhite .average{background:url(../images/stars/small/white/rElements.png) center left repeat-x}
+
+.simpleRatings .starssmallblack{background:url(../images/stars/small/black/rElements.png) repeat-x}
+.simpleRatings .starssmallblack input:hover{background:url(../images/stars/small/black/rElements.png) bottom left repeat-x}
+.simpleRatings .starssmallblack .average{background:url(../images/stars/small/black/rElements.png) center left repeat-x}
+
+.simpleRatings .starssmallred{background:url(../images/stars/small/red/rElements.png) repeat-x}
+.simpleRatings .starssmallred input:hover{background:url(../images/stars/small/red/rElements.png) bottom left repeat-x}
+.simpleRatings .starssmallred .average{background:url(../images/stars/small/red/rElements.png) center left repeat-x}
+
+.simpleRatings .starssmallblue{background:url(../images/stars/small/blue/rElements.png) repeat-x}
+.simpleRatings .starssmallblue input:hover{background:url(../images/stars/small/blue/rElements.png) bottom left repeat-x}
+.simpleRatings .starssmallblue .average{background:url(../images/stars/small/blue/rElements.png) center left repeat-x}
+
+.simpleRatings .starssmallgreen{background:url(../images/stars/small/green/rElements.png) repeat-x}
+.simpleRatings .starssmallgreen input:hover{background:url(../images/stars/small/green/rElements.png) bottom left repeat-x}
+.simpleRatings .starssmallgreen .average{background:url(../images/stars/small/green/rElements.png) center left repeat-x}
+
+.simpleRatings .starssmallorange{background:url(../images/stars/small/orange/rElements.png) repeat-x}
+.simpleRatings .starssmallorange input:hover{background:url(../images/stars/small/orange/rElements.png) bottom left repeat-x}
+.simpleRatings .starssmallorange .average{background:url(../images/stars/small/orange/rElements.png) center left repeat-x}
+
+.simpleRatings .starssmallpink{background:url(../images/stars/small/pink/rElements.png) repeat-x}
+.simpleRatings .starssmallpink input:hover{background:url(../images/stars/small/pink/rElements.png) bottom left repeat-x}
+.simpleRatings .starssmallpink .average{background:url(../images/stars/small/pink/rElements.png) center left repeat-x}
+
+.simpleRatings .starssmallpurple{background:url(../images/stars/small/purple/rElements.png) repeat-x}
+.simpleRatings .starssmallpurple input:hover{background:url(../images/stars/small/purple/rElements.png) bottom left repeat-x}
+.simpleRatings .starssmallpurple .average{background:url(../images/stars/small/purple/rElements.png) center left repeat-x}
+
+/*BREAK*/
+.simpleRatings .starsmediumwhite{background:url(../images/stars/medium/white/rElements.png) repeat-x}
+.simpleRatings .starsmediumwhite input:hover{background:url(../images/stars/medium/white/rElements.png) bottom left repeat-x}
+.simpleRatings .starsmediumwhite .average{background:url(../images/stars/medium/white/rElements.png) center left repeat-x}
+
+.simpleRatings .starsmediumblack{background:url(../images/stars/medium/black/rElements.png) repeat-x}
+.simpleRatings .starsmediumblack input:hover{background:url(../images/stars/medium/black/rElements.png) bottom left repeat-x}
+.simpleRatings .starsmediumblack .average{background:url(../images/stars/medium/black/rElements.png) center left repeat-x}
+
+.simpleRatings .starsmediumorange{background:url(../images/stars/medium/orange/rElements.png) repeat-x}
+.simpleRatings .starsmediumorange input:hover{background:url(../images/stars/medium/orange/rElements.png) bottom left repeat-x}
+.simpleRatings .starsmediumorange .average{background:url(../images/stars/medium/orange/rElements.png) center left repeat-x}
+
+.simpleRatings .starsmediumred{background:url(../images/stars/medium/red/rElements.png) repeat-x}
+.simpleRatings .starsmediumred input:hover{background:url(../images/stars/medium/red/rElements.png) bottom left repeat-x}
+.simpleRatings .starsmediumred .average{background:url(../images/stars/medium/red/rElements.png) center left repeat-x}
+
+.simpleRatings .starsmediumblue{background:url(../images/stars/medium/blue/rElements.png) repeat-x}
+.simpleRatings .starsmediumblue input:hover{background:url(../images/stars/medium/blue/rElements.png) bottom left repeat-x}
+.simpleRatings .starsmediumblue .average{background:url(../images/stars/medium/blue/rElements.png) center left repeat-x}
+
+.simpleRatings .starsmediumgreen{background:url(../images/stars/medium/green/rElements.png) repeat-x}
+.simpleRatings .starsmediumgreen input:hover{background:url(../images/stars/medium/green/rElements.png) bottom left repeat-x}
+.simpleRatings .starsmediumgreen .average{background:url(../images/stars/medium/green/rElements.png) center left repeat-x}
+
+.simpleRatings .starsmediumpink{background:url(../images/stars/medium/pink/rElements.png) repeat-x}
+.simpleRatings .starsmediumpink input:hover{background:url(../images/stars/medium/pink/rElements.png) bottom left repeat-x}
+.simpleRatings .starsmediumpink .average{background:url(../images/stars/medium/pink/rElements.png) center left repeat-x}
+
+.simpleRatings .starsmediumpurple{background:url(../images/stars/medium/purple/rElements.png) repeat-x}
+.simpleRatings .starsmediumpurple input:hover{background:url(../images/stars/medium/purple/rElements.png) bottom left repeat-x}
+.simpleRatings .starsmediumpurple .average{background:url(../images/stars/medium/purple/rElements.png) center left repeat-x}
+
+/*CUSTOM IMAGE (SPRITE)*/
+.simpleRatings .custom{background:url(../images/custom/rElements.png) repeat-x}/*Empty*/
+.simpleRatings .custom input:hover{background:url(../images/custom/rElements.png) bottom left repeat-x}/*Normal*/
+.simpleRatings .custom .average{background:url(../images/custom/rElements.png) center left repeat-x}/*Mouse Over*/
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/*CUSTOM ../images (../images)*/
+.simpleRatings .custom{background:url(../images/custom/1.png) repeat-x}/*Empty*/
+.simpleRatings .custom input:hover{background:url(../images/custom/2.png) repeat-x}/*Normal*/
+.simpleRatings .custom .average{background:url(../images/custom/3.png) repeat-x}/*Mouse Over*/
