@@ -1,7 +1,7 @@
-Dhuum CMS
+Teach Rate
 =========
 
 Informations
 -------
 
-Dhuum est un système de gestion de contenu WEB développer pour Wazuras.
+Site web de vote sur les proffeseur.
