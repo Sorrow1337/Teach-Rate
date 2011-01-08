@@ -8,3 +8,4 @@ $(function()
   $(".use_tooltip_top").tooltip( { position: 'top center', predelay: 500 } ).dynamic();
 });
 </script>
+<?php echo $_COOKIE['rate']; ?>

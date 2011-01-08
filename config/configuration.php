@@ -14,5 +14,10 @@ $sys->dbName = 'teachrate';
 $sys->dbUser = 'root';
 $sys->dbPass = '';
 
+$sys->size = 'medium'; // (small,medium,large)
+$sys->color = 'green'; // (orange,red,blue,green,pink,purple,black,white)
+
+$sys->website = $_SERVER['HTTP_HOST'];
+
 $title = 'Teach Rate v' . VERSION;
 $description = 'Note t\'es profs';
