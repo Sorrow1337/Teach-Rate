@@ -3,7 +3,7 @@ require_once 'config/configuration.php';
 
 $page = htmlentities(@$_GET['page']);
 
-include_once 'build/header.php';
+include_once 'build/header' . PHP;
 
 if(isset($page) && $page != '')
 {
@@ -21,4 +21,4 @@ else
   include_once PAGES . 'home' . PHP;
 }
 
-include_once 'build/footer.php';
+include_once 'build/footer' . PHP;
