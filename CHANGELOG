@@ -1,7 +1,10 @@
-[v0.0.4 - 07/01/2011] (Mise a jour majeur !)
+[v0.0.5 - 08/01/2011]
+  - Page détails en place (Rating Stars pas encore configuré)
+
+[v0.0.4 - 07/01/2011]
   - Changement du desgin (Optimisation)
   - Mise en place de SystemClass (Contiendra une très grosse partie des fonctions vitale et secondaire du site)
-  - Pré mise en place de Rating Stats (Vote étoile)
+  - Pré mise en place de Rating Stars (Vote étoile)
 
 [v0.0.3 - 05/01/2011]
   - Ajout des images & feuille de style
