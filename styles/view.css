@@ -121,6 +121,7 @@ DIV.tabs LI IMG
 {
     float: left;
     margin-right: 6px;
+    margin-top: -2px;
 }
 
 DIV.tabs LI.active

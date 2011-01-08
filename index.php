@@ -2,6 +2,8 @@
 require_once 'config/configuration.php';
 
 $page = htmlentities(@$_GET['page']);
+$sys->page = $page;
+if(isset($_GET['id'])){ $sys->id = $_GET['id']; }
 
 include_once 'build/header' . PHP;
 

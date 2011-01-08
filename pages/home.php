@@ -1,11 +1,21 @@
-  <?php $sys->details($_GET['id']); ?>
-</div>
+<div class="comments">
+  <div class="paged_inner">
+    <div class="comment">
+      <div class="text">
+        <table border="0" width="100%">
+          <tr align="center">
+            <th>Nom</th>
+            <th>Matière</th>
+            <th>Note</th>
+            <th>Votes</th>
+            <th>Regarder</th>
+          </tr>
 
-<script type="text/javascript">
-$(function()
-{
-  $(".use_tooltip").tooltip( { position: 'bottom center', predelay: 500 } ).dynamic();
-  $(".use_tooltip_top").tooltip( { position: 'top center', predelay: 500 } ).dynamic();
-});
-</script>
-<?php echo $_COOKIE['rate']; ?>
+          <?php $sys->liste(); ?>
+          
+        </table>
+      </div>
+      <div class="meta"><img src="images/transmit.png" />&nbsp;&nbsp; You suck !</div>
+    </div>
+  </div>
+</div>

@@ -12,10 +12,10 @@ function page_name($page)
     case '404';
       $page = 'Erreur 404';
       break;
-    /*case '';
-      $page = '';
+    case 'details';
+      $page = 'Fiche profil';
       break;
-    case '';
+    /*case '';
       $page = '';
       break;
     case '';

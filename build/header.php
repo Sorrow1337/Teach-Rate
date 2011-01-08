@@ -37,13 +37,5 @@
       <div class='title'><?php echo $title; ?></div>
         <div class='username'><a href="#"><?php echo $description; ?></a></div>
     </div>
-
-    <div class='tabs'>
-      <ul>
-        <li><a href='#'><img src='images/teach.png' /> Liste</a></li>
-        <li class='active'><a href='#'><img src='images/details.png' /> Details</a></li>
-        <li><a href='#'><img src='images/comment.png' /> 1 Commentaire(s)</a></li>
-        <li><a href='#'><img src='images/settings.png' /> Admin</a></li>
-      </ul>
-    </div>
+    <?php $sys->menu(); ?>
   </div>
