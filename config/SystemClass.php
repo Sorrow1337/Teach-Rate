@@ -4,13 +4,19 @@ class SystemClass
 
   public $dbHost, $dbName, $dbUser, $dbPass;
   public $dbConnection;
+  public $average, $id, $vote;
 
   public function database()
   {
     $this->dbConnection = mysql_connect($this->dbHost, $this->dbUser, $this->dbPass) or die(mysql_error());
-		mysql_select_db($this->dbName) or die(mysql_error());
+    mysql_select_db($this->dbName) or die(mysql_error());
     mysql_query("SET NAMES 'utf8'");
   }
+
+  public function close()
+  {
+		mysql_close($this->dbConnection);
+	}
 
   public function tableCheck()
   {
@@ -30,11 +36,30 @@ class SystemClass
     }
   }
 
+  public function data($id)
+  {
+		$query = mysql_query("SELECT * FROM teachers WHERE id=$id");
+    $rating = mysql_fetch_array($query);
+    if($rating['vote'] == 0)
+    {
+      $this->average=0; $this->vote=0; $this->decAVG=0;
+    }
+    else
+    {
+      $average = $rating['vote']*5;
+      $average = $rating['note']/$average;
+      $this->decAVG = $average;
+      $this->average = round($average*100);
+      $this->vote = $rating['vote'];
+    }
+	}
+
   public function details($id)
   {
     $this->database();
     if(is_numeric($id) && $id > 0 && $id < 255)
     {
+      $this->data($id);
       if(mysql_num_rows(mysql_query("SELECT * FROM teachers WHERE id=$id")))
       {
         $query = mysql_query("SELECT * FROM teachers WHERE id=$id");
@@ -57,7 +82,7 @@ class SystemClass
                           <input type="submit" name="rated" value="4" style="width:80%; z-index:2" />
                           <input type="submit" name="rated" value="5" style="width:100%; z-index:1" />
                         </fieldset>
-                        <div class="average" style="width:65%"></div>
+                        <div class="average" style="width:'.$this->average.'%"></div>
                       </form>
                     </div>
                   </div>
@@ -70,6 +95,7 @@ class SystemClass
         }
       }
     }
+    $this->close();
   }
 }
 ?>
