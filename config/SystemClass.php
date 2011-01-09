@@ -185,6 +185,14 @@ class SystemClass
 
   public function menu()
   {
+
+    if(isset($this->id) && $this->id != '')
+    {
+      $this->database();
+      $row = mysql_num_rows(mysql_query("SELECT * FROM comments WHERE teach=$this->id"));
+      $this->close();
+    }
+
     switch($this->page)
     {
       case 'home':
@@ -200,7 +208,7 @@ class SystemClass
           <ul>
             <li><a href="?page=home"><img src="images/teach.png" /> Liste</a></li>
             <li class="active"><a href="?page=details&id='.$this->id.'"><img src="images/details.png" /> Details</a></li>
-            <li><a href="?page=comments&id='.$this->id.'"><img src="images/comment.png" /> 1 Commentaire(s)</a></li>
+            <li><a href="?page=comments&id='.$this->id.'"><img src="images/comment.png" /> '.$row.' Commentaire(s)</a></li>
             <li><a href="?page=admin"><img src="images/settings.png" /> Admin</a></li>
           </ul>
         </div>';
@@ -210,7 +218,7 @@ class SystemClass
           <ul>
             <li><a href="?page=home"><img src="images/teach.png" /> Liste</a></li>
             <li><a href="?page=details&id='.$this->id.'"><img src="images/details.png" /> Details</a></li>
-            <li class="active"><a href="?page=comments&id='.$this->id.'"><img src="images/comment.png" /> 1 Commentaire(s)</a></li>
+            <li class="active"><a href="?page=comments&id='.$this->id.'"><img src="images/comment.png" /> '.$row.' Commentaire(s)</a></li>
             <li><a href="?page=admin"><img src="images/settings.png" /> Admin</a></li>
           </ul>
         </div>';
@@ -265,6 +273,38 @@ class SystemClass
       echo 'Aucun professeurs';
     }
     
+    $this->close();
+  }
+
+  public function comments()
+  {
+    // Mettre la date sous la forme JJ/MM HH:mm
+
+    $this->database();
+    if(is_numeric($this->id) && $this->id > 0 && $this->id < 255)
+    {
+      if(mysql_num_rows(mysql_query("SELECT * FROM teachers WHERE id=$this->id LIMIT 0,1")))
+      {
+        if(mysql_num_rows(mysql_query("SELECT * FROM comments WHERE teach=$this->id LIMIT 0,1")))
+        {
+          $query = mysql_query("SELECT * FROM comments WHERE teach=$this->id ORDER BY date DESC");
+          while ($data = mysql_fetch_assoc($query))
+          {
+            echo '<div class="paged_inner">
+              <div class="comment'.($data['admin'] == 1 ? ' admin' : '').'">
+                <div class="author">
+                  <a href="#" style="font-size: 17px">'.$data['name'].'<br/>
+                    <div class="avatar"><img src="'.$data['picture'].'" width="64" height="64"></div>
+                  </a>
+                </div>
+                <div class="text'.($data['admin'] == 1 ? ' creator' : '').'">'.$data['content'].'</div>
+                <div class="meta"> <img src="images/time.png"> '.$data['date'].'</div>
+              </div>
+            </div>';
+          }
+        }
+      }
+    }
     $this->close();
   }
 }

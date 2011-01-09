@@ -84,3 +84,15 @@ A.close IMG
     text-decoration: underlined !important;
     color: white;
 }
+
+.warning
+{
+	padding: 5px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 10px;
+	background-color: #ff0;
+	border: 3px solid #f00;
+	color: #333;
+	width: 400px;
+}

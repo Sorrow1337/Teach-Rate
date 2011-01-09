@@ -1,4 +1,9 @@
-[v0.0.5 - 08/01/2011]
+[v0.0.6 - 09/01/2011]
+  - Mise en place des commentaires
+  - Affichage du nombre de commentairesdans le menu
+  - Ajout des messages d'avertissement
+
+v0.0.5 - 08/01/2011]
   - Page détails en place (Rating Stars pas encore configuré)
   - Rating Stars (Calcul) terminé
   - Rating Stars (Vote) terminé
@@ -7,7 +12,7 @@
 
 [v0.0.4 - 07/01/2011]
   - Changement du desgin (Optimisation)
-  - Mise en place de SystemClass (Contiendra une très grosse partie des fonctions vitale et secondaire du site)
+  - Mise en place de SystemClass (Contiendra une très grosse partie des fonctions vitale du site)
   - Pré mise en place de Rating Stars (Vote étoile)
 
 [v0.0.3 - 05/01/2011]

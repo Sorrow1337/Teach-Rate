@@ -1,7 +1,7 @@
 <?php
 define( 'PAGES', 'pages/' );
 define( 'PHP', strrchr( __FILE__, '.' ) );
-define( 'VERSION', '0.0.5' );
+define( 'VERSION', '0.0.6' );
 ini_set('date.timezone', 'Europe/Paris');
 
 require_once( 'functions' . PHP );
@@ -15,7 +15,7 @@ $sys->dbUser = 'root';
 $sys->dbPass = '';
 
 $sys->size = 'medium'; // (small,medium,large)
-$sys->color = 'green'; // (orange,red,blue,green,pink,purple,black,white)
+$sys->color = 'blue'; // (orange,red,blue,green,pink,purple,black,white)
 
 $sys->website = $_SERVER['HTTP_HOST'];
 

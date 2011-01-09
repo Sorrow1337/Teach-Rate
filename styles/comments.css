@@ -31,7 +31,7 @@
     line-height: 30px;
 }
 
-.banned .author A
+.admin .author A
 {
     color: red !important;
 }
@@ -107,7 +107,7 @@
 .comments input
 {
     position: relative;
-    width: 400px;
+/*    width: 400px;*/
 }
 
 .avatar
@@ -126,7 +126,7 @@
     top: -5px;
 }
 
-.banned .avatar
+.admin .avatar
 {
     background-color: red !important;
     border: 2px solid red!important;
